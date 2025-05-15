@@ -1,0 +1,52 @@
+:root{
+	--actv: #04AA6D; /* Add a green color to the "active/current" link */
+	--lght-gray: #eee; /* Grey background color */
+	--drk-gray: #ccc; /* Dark grey background on mouse-over */
+	--drpdwn-icon: #b3b3b3; /* Darker Grey background color */
+}
+body{padding: 2em;}
+/*===Side Nav starts===*/
+/* The side navigation menu */
+.sf-sidenav1 {
+  width: 20em; 
+  background-color: var(--lght-gray);
+}
+.sf-sidenav1 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.sf-sidenav1 ul li{
+	margin: 0;
+	padding: 0;
+}
+/* The navigation menu links */
+.sf-sidenav1 a {
+  padding: 5px; /* Add some padding */
+  padding-left:1em;
+  text-decoration: none; /* Remove underline from links */
+  background-color: var(--lght-gray);
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */ 
+}
+
+/* When you mouse over the navigation links, change their color */
+.sf-sidenav1 a:hover{
+  background-color: var(--drk-gray);
+}
+.sf-sidenav1 a.active {
+  background-color: var(--actv); 
+  color: white;
+}
+.dropdown-btn>a{
+	font-weight: 600;
+}
+.sf-sidenv-drpdwn-icon{
+	float:right;
+	padding-right: 8px;
+	color: var(--drpdwn-icon);
+}
+.sf-sidenav1 ul .sf-sidenv-drpdwn-cntnr{
+	padding-left:1em;
+	display:none;
+}
